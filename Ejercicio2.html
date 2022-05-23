@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div id="root">
+      <!--Render code React-js-->
+    </div>
+
+    <!-- Cargar React. -->
+    <!-- Nota: cuando se despliegue, reemplazar "development.js" con "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <!-- Cargamos nuestro componente de React. -->
+    <script type="text/babel">
+// nota cada codigo que veas documentado de aca para abajo
+// seran diferentes formas de realizarlo con jsx los coloco para
+// que podamos probar y mirar diferentes formas de como podriamos realizarlos
+// los 12 ejercicios
+
+// 0. guardado de datos simple
+const data = {
+  title_1: "Pagina inicial de Juan Tuesta",
+  paragraph_1: "",
+  title_2: "Enlaces Favoritos",
+  paragraph_2: "",
+}
+
+// 1.
+const title_x = <h1>{data.title_1}</h1>;
+const paragraph_x = <p>{data.paragraph_1}</p>;
+const subtitle_x = <h2>{data.title_2}</h2>;
+const paragraph_xx = <p>{data.paragraph_2}</p>;
+const element = (
+  <div>
+    {title_x}
+    {paragraph_x}
+        Bienvenido a mi pagina personal. Soy alumno de la Universidad de Manizales y esta es mi pagina inicial con la lista 
+        de mis enlaces favoritos y otra información de mi interes
+    {subtitle_x}
+    <ol>
+        <li>Internet</li>
+        <li>Google</li>
+        <li>Aldea global</li>
+        <li>Manual HTML</li>
+    </ol>
+    {paragraph_xx}
+        Juan Tuesta, Universidad de Manizales, mayo 2022.
+    </div>
+);
+
+// Renderiamos o pintamos
+ReactDOM.render(
+  element,// estructura jsx para pintar
+  document.getElementById('root')// elemento donde se pintara
+);
+    </script>
+  </body>
+</html>
