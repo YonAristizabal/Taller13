@@ -22,24 +22,65 @@
 // los 12 ejercicios
 
 // 0. guardado de datos simple
-
 const data = {
-  title_1: "",
+  title_1: "Cartelera de vuelos - Aeropuerto el mirador",
+  title_2: "Llegadas",
   paragraph_1: "",
+  title_3: "Salidas",
+  paragraph_3: "",
+
+
 }
 
 // 1.
 const title_x = <h1>{data.title_1}</h1>;
+const subtitle_x = <h2>{data.title_2}</h2>;
 const paragraph_x = <p>{data.paragraph_1}</p>;
+const subtitle_3x = <h2>{data.title_3}</h2>;
+const paragraph_3x = <p>{data.paragraph_3}</p>;
+
 
 const element = (
   <div>
     {title_x}
-    <img src="file:///home/jhon/Im%C3%A1genes/Captura%20de%20pantalla%20de%202022-02-10%2017-22-06.png" /> <strong>Tu concierto</strong>
+    {subtitle_x}
     {paragraph_x}
-    Bienvenido a este blog de coniertos... <br/> <br/>
-    <img src="file:///home/jhon/Im%C3%A1genes/Captura%20de%20pantalla%20de%202022-02-10%2017-23-14.png" />
 
+
+        <table>
+            <tr>
+            <th>Aerolinea</th>
+            <th>Nro. vuelo</th>
+            <th>Estatus</th>
+            <th>Hora estimada</th>
+            <th>Puerta</th>
+            </tr>
+            <tr>
+            <td>AIRLAN</td>
+            <td>355</td>
+            <td>ATERRIZO</td>
+            <td>2:45PM</td>
+            <td>3</td>
+            </tr>
+            <tr>
+                <td>VIAJAR</td>
+                <td>556</td>
+                <td>RETARDADO</td>
+                <td>2:35PM</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>AEROVUELO</td>
+                <td>1234</td>
+                <td>EN VUELO</td>
+                <td>3:45PM</td>
+                <td>8</td>
+            </tr>
+        </table>
+    {subtitle_3x}
+    {paragraph_3x}
+
+            
   </div>
 );
 
