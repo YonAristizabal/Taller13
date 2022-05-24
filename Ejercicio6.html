@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div id="root">
+      <!--Render code React-js-->
+    </div>
+
+    <!-- Cargar React. -->
+    <!-- Nota: cuando se despliegue, reemplazar "development.js" con "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <!-- Cargamos nuestro componente de React. -->
+    <script type="text/babel">
+// nota cada codigo que veas documentado de aca para abajo
+// seran diferentes formas de realizarlo con jsx los coloco para
+// que podamos probar y mirar diferentes formas de como podriamos realizarlos
+// los 12 ejercicios
+
+// 0. guardado de datos simple
+const data = {
+  title_1: "El Noticiero Next Universit",
+  title_2: "Programas de Tecnología",
+  title_3: "Desarrollo WEB",
+  paragraph_1: "",
+  title_4: "Android",
+  paragraph_2: "",
+  title_5: "Programa de Negocio",
+  title_6: "Mercadeo Digital",
+  paragraph_3: "",
+}
+
+// 1.
+const title_x = <h1>{data.title_1}</h1>;
+const subtitle_2x = <h2>{data.title_2}</h2>;
+const subtitle_3x = <h3>{data.title_3}</h3>;
+const subtitle_4x = <h3>{data.title_4}</h3>;
+const paragraph_x = <p>{data.paragraph_1}</p>;
+const paragraph_2x = <p>{data.paragraph_2}</p>;
+const subtitle_5x = <h2>{data.title_5}</h2>;
+const subtitle_6x = <h3>{data.title_6}</h3>;
+const paragraph_3x = <p>{data.paragraph_3}</p>;
+
+const element = (
+<div>
+    {title_x}
+    {subtitle_2x}
+    {subtitle_3x}
+    {paragraph_x}
+    <strong><em>Next University</em></strong> lanza su nuevo programa de formación <strong>"Desarrollador Web"</strong> con la finalidad de capacitar personas en <br/>
+        las tendencias actuales sobre tecnologías, en el caso del desarrollador web, se bas temas relacionados a la <br/>
+        implementación de Front-End con tecnologías y Frameworks, tales como: <em>HTML5,CSS,JavaScript,Boostrap, entre </em> <br/> 
+        <em>otros</em>.
+    {subtitle_4x}
+    {paragraph_2x}
+        En <strong><em>Next University</em></strong> te ofrecemos el programa de <strong>Android</strong> que te da las herramientas neccesarias para diseñar e <br/>
+        implementar aplicaciones Android para dispositivos moviles, partiendo de un conocimiento básico de <em>Java</em>, utilizando <br/>
+        el entorno de desarrollo <em>Android Studio</em>,aprenderas los aspectos fundamentalse para crear aplicaciones Android <br/>
+        interacticas, dinámicas y exitosas, utilziando técnocas para el manejo de los recursos, datos, segundos planos, <br/>
+        localización, sensores, animaciones, gráficos, multimedia y monetización.
+    {subtitle_5x}
+    {subtitle_6x}
+    {paragraph_3x}
+        <strong><em>Next University</em></strong> coloca a tu dispositivo de <strong>"Mercadeo Digital"</strong>, Sabias que... Mercadeo Digital o <br/>
+        Digital Marketing en mucho mas que hacer y publicar anuncios, Se trata del consumidor y la estrategia de negocio. <br/>
+        Estos son los puntos de partida para que cualquier acción de mercadeo digital <em>sea exitosa y optimice la inversión</em>. <br/>
+        Este certificado, es un programa completo y pratico, que permite entender al consumido, la industria, la <br/>
+        competencia y los retos del negocio propio, para crear e implementar estrategias a la medida, en diferentes <br/>
+        plataformas y medios digitales. Por supuesto, monitore
+</div>
+    
+);
+
+
+// Renderiamos o pintamos
+ReactDOM.render(
+  element,// estructura jsx para pintar
+  document.getElementById('root')// elemento donde se pintara
+);
+    </script>
+  </body>
+</html>
